@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JQuery/jquery-3.7.1.min.js"></script>
+    <script src="JS/script.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>lr11</title>
+</head>
+<body>
+    <div class="main">
+        <div class="menu">
+            <div class="words">
+                <div class="col">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="englishWord" id="wordInput1"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="englishWord" id="wordInput2"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="englishWord" id="wordInput3"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="englishWord" id="wordInput4"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="englishWord" id="wordInput5"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="englishWord" id="wordInput6"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="englishWord" id="wordInput7"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="englishWord" id="wordInput8"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="englishWord" id="wordInput9"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="englishWord" id="wordInput10"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="englishWord" id="wordInput11"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="englishWord" id="wordInput12"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="englishWord" id="wordInput13"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="englishWord" id="wordInput14"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="englishWord" id="wordInput15"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="englishWord" id="wordInput16"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="englishWord" id="wordInput17"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="englishWord" id="wordInput18"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="englishWord" id="wordInput19"></div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="englishWord" id="wordInput20"></div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" id="leftArrow">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" id="rightArrow">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+            <div class="progressBarCustom progress align-self-center" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" style="width: 0%"></div>
+            </div>
+            <div class="answerNumber">Progress: 0/20</div>
+            <div class="trueAndFalse">
+                <div class="trueAnswers col-6 d-flex d-flex justify-content-center align-items-center flex-column">True Answers:
+                    <div class="trueAnswersAmount">0</div>
+                </div>
+                <div class="fasleAnswers col-6 d-flex justify-content-center align-items-center flex-column">False Answers:
+                    <div class="falseAnswersAmount">0</div>
+                </div>
+            </div>
+            <div class="answer d-flex">
+                <input type="text" class="form-control" placeholder="Введіть переклад" aria-label="Username" aria-describedby="basic-addon1" id="translate">
+            </div>
+            <button type="button" class="btn btn-primary btnCustom" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="btnEnd">Закінчити раніше</button>
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header customModal">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Результати гри</h1>
+                    </div>
+                    <div class="modal-body customModal">
+                        <div class="questionsNumber">Кількість пройдених питань: </div>
+                        <div class="result">Правильних відповідей: </div>
+                        <div class="resultFail">Неправильних відповідей: </div>
+                        <div class="gameResult">Ваш рівень знань англійської: </div>
+                    </div>
+                    <div class="modal-footer justify-content-center align-items-center customModal">
+                        <button type="button" class="btn btn-primary" id="btnReload">Зрозумів</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
